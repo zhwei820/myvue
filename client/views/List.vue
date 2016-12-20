@@ -1,5 +1,5 @@
 <template>
-  <div class="page" :style="{ height: wrapperHeight + 'px' }">
+  <div class="htmlBox" :style="{ height: wrapperHeight + 'px' }">
     <div class="page-infinite-list" v-infinite-scroll="loadMore" infinite-scroll-disabled="loading" infinite-scroll-distance="50">
       <list-item v-for="item in list"></list-item>
     </div>
@@ -46,3 +46,13 @@ export default {
     }
 }
 </script>
+
+<style scoped>
+  .htmlBox {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background: #f5f5f5;
+        max-width: 640px;
+    }
+</style>

@@ -4,18 +4,18 @@
             <img src="https://imgs.bipush.com/auth/data/avatar/2.jpg!40x40?imageView2/1/w/40/h/40/|imageMogr2/strip/interlace/1/quality/85/format/jpg">
             <a href="/member/32208.html" class="author-a1">曲凯</a>
         </div>
-        <a href="/article/175049.html">
+        <router-link to="/">
             <div class="article-md-img-box">
                 <img src="https://imgs.bipush.com/article/cover/201509/25/091649399823.jpg?imageView2/1/w/290/h/218/|imageMogr2/strip/interlace/1/quality/85/format/jpg">
             </div>
             <div class="article-info-box">
                 <div class="article-md-title">一个王兴换三个陈欧，一个滴滴换十个小红书</div>
             </div>
-            <div class="article-info-time">
-                <span>6小时前</span>
-                <span class="pull-right"><i class="i-new-vip icon-v-bubble"></i>9</span>
-            </div>
-        </a>
+        </router-link>
+        <div class="article-info-time">
+            <span>6小时前</span>
+            <span class="pull-right"><i class="i-new-vip icon-v-bubble"></i>9</span>
+        </div>
     </li>
 
 </template>
