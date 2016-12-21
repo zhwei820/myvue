@@ -53,7 +53,7 @@ export default {
     }
     
     .img {
-        width: 146px;
+        width: 35%;
         height: 83px;
         position: relative;
         display: inline-block;
@@ -65,26 +65,26 @@ export default {
     }
     
     .info {
-        width: 250px;
-        margin-right: 5px;
+        width: 63%;
+        margin-right: 3px;
         display: inline-block;
     }
     
     .name {
-        font-size: 17px;
+        font-size: 1.2rem;
         color: #000;
         margin-bottom: .1rem;
     }
     
     .brief {
-        font-size: 15px;
+        font-size: 1.05rem;
         /*line-height: .34rem;*/
         color: #969696;
         margin-bottom: 5px;
     }
     
     .price {
-        font-size: 16px;
+        font-size: 1.1rem;
         color: #FE4900;
     }
     
