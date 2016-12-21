@@ -22,33 +22,33 @@
 <style scoped>
     .index-header {
         background: #FFF;
-        padding: 0 0 5px;
+        padding: 0 0 3px;
     }
     
     .index-header .search_bar {
-        line-height: .34rem;
+        line-height: .2rem;
     }
     
     .index-header .search_bar>a {
         display: block;
-        padding: 10px 15px 25px;
-        margin-top: 15px;
+        padding: 10px 15px 16px;
+        margin-top: 5px;
     }
    
     .mintui-search {
-        font-size: 2rem;
+        font-size: 1.5rem;
         color: #CACACA;
         padding-right: 10px;
     }
     
     .text {
-        font-size: 1.8rem;
+        font-size: 1.2rem;
         color: #9C9C9C;
     }
     
     .index-header .search_bottom {
         border: 1px solid #E3E3E3;
-        margin: 0 10px;
+        margin: 0 2px;
         height: 4px;
         border-top: 0;
     }

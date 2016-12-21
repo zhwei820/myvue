@@ -45,6 +45,8 @@
     }
     
     .pro-text-total {
+        font-size: 0.7rem;
+        
         display: inline-block;
     }
     
@@ -59,6 +61,7 @@
         color: #666;
         font-family: PingFang-SC-Light;
         float: right;
+        font-size: 0.7rem;
     }
     
     .pro-text i {

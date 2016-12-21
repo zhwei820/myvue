@@ -1,6 +1,6 @@
 <template>
 
-    <div class="J_linksign-customize">
+    <div class="">
         <a class="item" href="/#/product/view?product_id=4984" data-stat-id="69b508818cf387e2" onclick="_msq.push(['trackEvent', '221a86c5a4688b35-69b508818cf387e2', '/#/product/view?product_id=4984', 'pcpid']);">
             <div class="img">
                 <img class="ico lazy" data-src="//i8.mifile.cn/v1/a1/df70403b-6e69-0822-e92a-be464e868698.webp" src="//i8.mifile.cn/v1/a1/df70403b-6e69-0822-e92a-be464e868698.webp"
@@ -42,21 +42,18 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
     .item {
-        float: left;
-        width: 100%;
-        /*display: box;
+        display: box;
         display: -webkit-box;
         box-align: center;
-        -webkit-box-align: center;*/
-        padding: .3rem 0;
+        -webkit-box-align: center;
+        padding: 1rem 0;
         border-bottom: 1px solid #F2F2F2;
     }
     
     .img {
-        width: 35%;
-        height: 83px;
+        width: 9rem;
+        height: 6rem;
         position: relative;
-        display: inline-block;
     }
     
     img {
@@ -65,9 +62,8 @@ export default {
     }
     
     .info {
-        width: 63%;
-        margin-right: 3px;
-        display: inline-block;
+        box-flex: 1;
+        -webkit-box-flex: 1;
     }
     
     .name {
@@ -80,7 +76,7 @@ export default {
         font-size: 1.05rem;
         /*line-height: .34rem;*/
         color: #969696;
-        margin-bottom: 5px;
+        margin-bottom: 2px;
     }
     
     .price {

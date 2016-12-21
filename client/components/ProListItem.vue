@@ -39,8 +39,10 @@ import ProProgress from '../components/ProProgress'
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
     .prolistitem-wrapper {
-        float: left;
-        width: 50%;
+        display: box;
+        display: -webkit-box;
+        box-flex: 1;
+        -webkit-box-flex: 1;
         border-right: 1px solid #ebebeb;
         border-bottom: 1px solid #ebebeb;
         box-sizing: border-box;
@@ -56,7 +58,6 @@ import ProProgress from '../components/ProProgress'
     }
     .goods-pic-fixed {
         width: 100px;
-        /*padding-bottom: 3.5rem;*/
         margin: 0 auto;
     }
     

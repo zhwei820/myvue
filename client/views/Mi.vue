@@ -33,7 +33,7 @@
     </div>
 
     <div v-for="item in defaultResult">
-      <pro-list-item></pro-list-item>
+      <pro-list-item2></pro-list-item2>
     </div>
 
     <div v-for="item in defaultResult">
@@ -48,7 +48,7 @@
 
 import MiSearch from '../components/MiSearch'
 import Card3 from '../components/Card3'
-import ProListItem from '../components/ProListItem'
+import ProListItem2 from '../components/ProListItem2'
 import ProListItemMi from '../components/ProListItemMi'
 
 export default {
@@ -68,7 +68,7 @@ export default {
     };
   },
   components:{
-    MiSearch, ProListItem, Card3,ProListItemMi
+    MiSearch, ProListItem2, Card3,ProListItemMi
   },
 
   computed: {
