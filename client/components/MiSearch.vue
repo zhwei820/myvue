@@ -22,7 +22,7 @@
 <style scoped>
     .index-header {
         background: #FFF;
-        padding: 0 0 .1rem;
+        padding: 0 0 5px;
     }
     
     .index-header .search_bar {
@@ -31,24 +31,25 @@
     
     .index-header .search_bar>a {
         display: block;
-        padding: .2rem .3rem .12rem;
+        padding: 10px 15px 25px;
+        margin-top: 15px;
     }
-    
-    .icon-search {
-        font-size: .4rem;
+   
+    .mintui-search {
+        font-size: 2rem;
         color: #CACACA;
-        padding-right: .1rem;
+        padding-right: 10px;
     }
     
     .text {
-        font-size: .3rem;
+        font-size: 1.8rem;
         color: #9C9C9C;
     }
     
     .index-header .search_bottom {
         border: 1px solid #E3E3E3;
-        margin: 0 .2rem;
-        height: .08rem;
+        margin: 0 10px;
+        height: 4px;
         border-top: 0;
     }
 </style>
