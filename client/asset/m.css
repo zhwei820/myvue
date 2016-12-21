@@ -11,6 +11,7 @@ html, body {
     -webkit-overflow-scrolling: touch;
     max-width: 640px;
 }
+/*a::hov*/
 
 .key-padding {
     padding: 0 0.75rem;
