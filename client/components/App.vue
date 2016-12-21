@@ -7,19 +7,19 @@
 
 
     <mt-tabbar v-model="selected" fixed>
-      <mt-tab-item id="外卖">
+      <mt-tab-item id="home">
         <img slot="icon" src="http://c1.mifile.cn/f/i/f/mishop/iic/xp.png">
         外卖
       </mt-tab-item>
-      <mt-tab-item id="订单">
+      <mt-tab-item id="order">
         <img slot="icon" src="http://c1.mifile.cn/f/i/f/mishop/iic/xp.png">
         订单
       </mt-tab-item>
-      <mt-tab-item id="发现">
+      <mt-tab-item id="service">
         <img slot="icon" src="http://c1.mifile.cn/f/i/f/mishop/iic/xp.png">
         发现
       </mt-tab-item>
-      <mt-tab-item id="我的">
+      <mt-tab-item id="my">
         <img slot="icon" src="http://c1.mifile.cn/f/i/f/mishop/iic/xp.png">
         我的
       </mt-tab-item>
@@ -39,14 +39,37 @@
   export default {
     data(){
       return {
-        selected:1,
+        selected: "home",
       }
     },
     computed: {
       visible() {
         return ['/', '/header', '/search', '/mi'].indexOf(this.$route.path) < 0;
       }
+    },
+    method:{
+      // a
+    },
+    watch: {
+      selected: function (val, oldVal) {
+        this.$router.push("/mi?tab=" + val)
+        // router.push("/mi")
+      },
+      $route : function (val, oldVal) {
+        var tab = val.query.tab
+        if(tab){
+          this.selected = tab
+        }
+      },
+  },
+  mounted(){
+    var tab = this.$router.currentRoute.query.tab
+    if(tab){
+      this.selected = tab
     }
+  }
+  
+
   };
 </script>
 
