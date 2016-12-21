@@ -49,6 +49,11 @@ export default {
       defaultResult: [
         'Apple',
         'Banana',
+        'Banana',
+        'Banana',
+        'Banana',
+        'Banana',
+        'Banana',
       ]
     };
   },
