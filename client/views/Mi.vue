@@ -26,10 +26,19 @@
       </a>
     </div>
 
-<div v-for="item in defaultResult">
-  <pro-list-item></pro-list-item>
-</div>
 
+
+    <div v-for="item in defaultResult">
+      <card3></card3>
+    </div>
+
+    <div v-for="item in defaultResult">
+      <pro-list-item></pro-list-item>
+    </div>
+
+    <div v-for="item in defaultResult">
+      <pro-list-item-mi></pro-list-item-mi>
+    </div>
 
 
   </div>
@@ -38,7 +47,9 @@
 <script>
 
 import MiSearch from '../components/MiSearch'
+import Card3 from '../components/Card3'
 import ProListItem from '../components/ProListItem'
+import ProListItemMi from '../components/ProListItemMi'
 
 export default {
   name: 'page-search',
@@ -53,12 +64,11 @@ export default {
         'Banana',
         'Banana',
         'Banana',
-        'Banana',
       ]
     };
   },
   components:{
-    MiSearch, ProListItem
+    MiSearch, ProListItem, Card3,ProListItemMi
   },
 
   computed: {
