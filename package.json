@@ -1,7 +1,7 @@
 {
-  "name": "y",
+  "name": "myvue",
   "version": "0.1.0",
-  "description": "y",
+  "description": "myvue",
   "main": "client/index.js",
   "scripts": {
     "test": "echo lol",
@@ -9,7 +9,7 @@
     "dev": "node build/server.js",
     "lint": "eslint client/* --ext .js --ext .vue"
   },
-  "author": "y",
+  "author": "yes",
   "license": "MIT",
   "dependencies": {
     "mint-ui": "^2.0.6",
