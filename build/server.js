@@ -53,7 +53,7 @@ app.get('*[^\.css|\.js|\.html?]$', (req, res) => {
     res.end(html)
   })
 })
-app.get('*[\.css|\.js|\.html?]$', (req, res) => {
+app.get('*[\.css|\.js|\.png|\.jp.*|\.ico.*|\.js|\.html?]$', (req, res) => {
   devMiddleWare.waitUntilValid(() => {
     var file1 = path.join(webpackConfig.output.path, req.url.substr(1))
     
