@@ -5,6 +5,7 @@
     </router-link>
     <router-view></router-view>
 
+    <div class="tabbar-block"></div>
 
     <mt-tabbar v-model="selected" fixed>
       <mt-tab-item id="home">
@@ -77,4 +78,8 @@
   .mint-tabbar{
     z-index: 1000!important;
   } 
+  .tabbar-block{
+    height: 50px;
+    display: block;
+}
 </style>

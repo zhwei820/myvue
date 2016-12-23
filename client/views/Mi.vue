@@ -26,9 +26,7 @@
       </a>
     </div>
 
-
-
-    <div v-for="item in defaultResult">
+    <div v-for="item in pros">
       <card3></card3>
     </div>
 
@@ -46,37 +44,43 @@
 
 <script>
 
+
 import MiSearch from '../components/MiSearch'
 import Card3 from '../components/Card3'
 import ProListItem2 from '../components/ProListItem2'
 import ProListItemMi from '../components/ProListItemMi'
 
 export default {
-  name: 'page-search',
+    name: 'page-search',
 
-  data() {
-    return {
-      value: '',
-      defaultResult: [
-        'Apple',
-        'Banana',
-        'Banana',
-        'Banana',
-        'Banana',
-        'Banana',
-      ]
-    };
-  },
-  components:{
-    MiSearch, ProListItem2, Card3,ProListItemMi
-  },
+    data() {
+        return {
+            value: '',
+            defaultResult: [
+                'Apple',
+                'Banana',
+                'Banana',
+                'Banana',
+                'Banana',
+                'Banana',
+            ],
+            pros: [
+                'Banana',
+                'Banana',
+            ]
+        };
+    },
+    components: {
+        MiSearch, ProListItem2, Card3, ProListItemMi
+    },
 
-  computed: {
-    filterResult() {
-      return this.defaultResult.filter(value => new RegExp(this.value, 'i').test(value));
+    computed: {
+        filterResult() {
+            return this.defaultResult.filter(value => new RegExp(this.value, 'i').test(value));
+        }
     }
-  }
 };
+
 </script>
 
 <style scoped>

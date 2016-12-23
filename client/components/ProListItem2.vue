@@ -23,10 +23,8 @@ import ProListItem from '../components/ProListItem'
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
     .prolistitem2 {
-        display: box;
-        display: -webkit-box;
-        box-flex: 1;
-        -webkit-box-flex: 1;
+        display: flex;
+        display: -webkit-flex;
     }
     
 </style>

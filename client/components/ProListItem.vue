@@ -39,10 +39,10 @@ import ProProgress from '../components/ProProgress'
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
     .prolistitem-wrapper {
-        display: box;
-        display: -webkit-box;
-        box-flex: 1;
-        -webkit-box-flex: 1;
+        display: flex;
+        display: -webkit-flex;
+        flex: 1;
+        -webkit-flex: 1;
         border-right: 1px solid #ebebeb;
         border-bottom: 1px solid #ebebeb;
         box-sizing: border-box;

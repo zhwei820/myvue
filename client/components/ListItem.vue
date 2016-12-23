@@ -29,10 +29,9 @@
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
     li {
-        display: inline-block;
+        flex: 1;
         background: #ffffff;
         width: 100%;
-        position: relative;
         padding: 0 1rem;
         min-height: 100px;
         font-size: 0;

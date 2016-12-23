@@ -42,16 +42,15 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
     .item {
-        display: box;
-        display: -webkit-box;
-        box-align: center;
-        -webkit-box-align: center;
+        display: flex;
+        display: -webkit-flex;
+        align-items: center;
         padding: 1rem 0;
         border-bottom: 1px solid #F2F2F2;
     }
     
     .img {
-        width: 9rem;
+        flex: 1;
         height: 6rem;
         position: relative;
     }
@@ -62,7 +61,7 @@ export default {
     }
     
     .info {
-        box-flex: 1;
+        flex: 1.5;
         -webkit-box-flex: 1;
     }
     
@@ -73,8 +72,7 @@ export default {
     }
     
     .brief {
-        font-size: 1.05rem;
-        /*line-height: .34rem;*/
+        font-size: 0.9rem;
         color: #969696;
         margin-bottom: 2px;
     }
